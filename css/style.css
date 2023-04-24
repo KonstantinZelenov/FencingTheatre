@@ -1,0 +1,123 @@
+/* Формирование заголовка страницы */
+* {
+    box-sizing: border-box;
+}
+.header {
+    background-color: blanchedalmond;
+    padding: 20px; 
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+
+}
+/* Margin-границы отступов на странице */
+body {
+    margin: 0;
+    background-color: rgba(129, 133, 90, 0.792);
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    text-align: center;
+}
+.first {
+    font-size: 20px;
+    font-family: Georgia;
+    padding:5px;
+    text-align: center;
+}
+.second {
+    text-indent: 1cm;
+}
+/* Стиль верхней панели навигации */
+.topnav {
+    overflow: hidden;
+    background-color: #6d6e5d;
+}
+
+/* Стиль ссылок в верхней панели навигации */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration-color: bisque;
+}
+
+/* Изменить цвет при наведении */
+.topnav a:hover {
+    background-color: #ddd;
+    color: rgb(90, 123, 12);
+}
+
+/* Создать 3 колонки рядом друг с другом */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    text-align: justify;
+  
+}
+
+
+/* Очистить поплавки после столбцов */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 0 4px;
+}
+
+/* Отзывчивый макет — три столбца располагаются друг над другом, а не рядом. */
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+.row.my-rules {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px; }
+
+    /* четыре равных столбца, расположенных рядом друг с другом. */
+.column {
+    flex: 25%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Отзывчивый макет - делает двухколоночный макет вместо четырех столбцов */
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Отзывчивый макет — два столбца располагаются друг над другом, а не рядом друг с другом. */
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Колонтикул */
+.footer {
+    background-color: blanchedalmond;
+    padding: 20px;
+    text-align:center;
+    margin-top: 30px;
+}
+img { width:100%
+}
+
+
