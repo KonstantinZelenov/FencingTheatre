@@ -13,9 +13,11 @@ header {
     font-style: italic;
     font-size: 30px;
     display: flex;
+    justify-content: center;
+}
+h1 {
     text-align: justify;
 }
-
 /* Стиль верхней панели навигации */
 .topnav {
     overflow: hidden;
@@ -38,7 +40,9 @@ header {
     color: rgb(90, 123, 12);
 }
 li {
-    justify-content: flex-end;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
 }
 footer {
     background-color: blanchedalmond;
