@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: rgba(129, 133, 90, 0.792);
+    display: flex;
+}
