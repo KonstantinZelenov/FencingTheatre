@@ -6,3 +6,11 @@ body {
     background-color: rgba(129, 133, 90, 0.792);
     display: flex;
 }
+.header {
+    background-color: blanchedalmond;
+    padding: 20px; 
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+
+}
