@@ -79,28 +79,4 @@ footer {
   margin-top: 30px;
 }
 
-.video-media-youtube-inner {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-div[class^="video-media-youtube-inner-vi"] {
-  flex: 0 0 100%;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-div[class^="video-media-youtube-inner-vi"] p {
-  width: 40%;
-  float: left;
-}
-div[class^="video-media-youtube-inner-vi"] .sixteen-by-nine {
-  overflow: hidden;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-}
-
-div[class^="video-media-youtube-inner-vi"] iframe {
-  width: 40vw;
-  height: calc(40vw * 3 / 4);
-}
