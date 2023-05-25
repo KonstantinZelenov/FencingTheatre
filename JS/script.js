@@ -1,1 +1,0 @@
-alert ("Hello, give me your money!")
