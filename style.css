@@ -5,13 +5,14 @@
 body {
     margin: 0;
     padding-top: 80px;
-    background-color: #FFF;
-    background-image: url(https://sun1-89.userapi.com/impg/kyFpZNLKPfGfC6YTrsJhHRUoGUI9bq9kC8ekjw/KRZuGIoh4Dw.jpg?size=1100x733&quality=95&sign=22d92e6996202faf908723dd6837b125&type=album);
+    background-color: black;
+    color: antiquewhite;
+    padding: 0;
+    margin: 0;
+    background-image: url(https://sun9-25.userapi.com/impg/cZIeB5DMK92czV3RBVtEz0we5YPFUrG8_Ws2Ag/DXT6oAZ41LY.jpg?size=1080x721&quality=96&sign=f966be6f7c44eb687f7b06e289a7160c&type=album);
     background-repeat: no-repeat;
-    background-size: 100%;
-}
-main {
-    
+    background-size: cover;
+    position: relative;
 }
 
 header {
@@ -30,6 +31,7 @@ header {
     padding-right: 30px;
     position: fixed;
     top: 0;
+    color: antiquewhite;
 }
 
 h1 {
@@ -43,7 +45,7 @@ h1 {
     letter-spacing: 1.97px;
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
+    color: antiquewhite;
 }
 
 .topnav {
@@ -55,7 +57,7 @@ h1 {
 
 .topnav a {
     display: block;
-    color: #000000;
+    color: antiquewhite;
     text-align: center;
     padding: 14px 16px;
     font-size: 18px;
@@ -161,7 +163,3 @@ footer {
     text-align: center;
     margin-top: 30px;
 }
-
-
-
-
