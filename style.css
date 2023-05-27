@@ -13,8 +13,8 @@ body {
     background-image: url(https://sun9-25.userapi.com/impg/cZIeB5DMK92czV3RBVtEz0we5YPFUrG8_Ws2Ag/DXT6oAZ41LY.jpg?size=1080x721&quality=96&sign=f966be6f7c44eb687f7b06e289a7160c&type=album);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    background-position: 50% 50%;
+    position: absolute;
+    
 }
 
 header {
@@ -36,20 +36,8 @@ header {
     color: antiquewhite;
 }
 
-
-
-.discription-title {
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
 h1 {
     display: inline-block;
-    flex-shrink: 0;
     padding-left: 0px;
     font-style: normal;
     font-weight: 500;
@@ -59,6 +47,37 @@ h1 {
     text-transform: uppercase;
     text-decoration: none;
     color: antiquewhite;
+}
+
+h2 { 
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 100px;
+    letter-spacing: 13.8571px;
+    text-transform: uppercase;
+    margin: 0;
+
+}
+
+.discription-title p{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 5px;
+    letter-spacing: 8.8571px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 550px;
 }
 
 .topnav {
@@ -79,6 +98,31 @@ h1 {
 
 .topnav a:hover {
     color: rgb(198, 10, 13);
+}
+
+.about-trainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+
+.about-trainer-text {
+    flex-basis: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.about-trainer-img {
+    flex-basis: 50%;
+    padding: 20px;
+    margin: 20px;
+}
+
+.about-trainer-img img {
+    width: 100%;
 }
 
 .nav {
