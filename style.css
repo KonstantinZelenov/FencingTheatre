@@ -105,11 +105,55 @@ header {
     .dropdown {
         display: flex;
         align-items: center;
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        background-color: rgb(33, 32, 32);
+        min-width: 300px;
+        padding: 12px 16px;
+        z-index: 1;
+        height: 310px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        color: antiquewhite;
+        justify-content: center;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
     }
 
     .dropdown img {
         width: 30px;
         height: 30px;
+    }
+
+    .dropdown p {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 60px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+
+    .dropdown a {
+        text-decoration: none;
+        color: antiquewhite;
+        width: 120px;
+        font-size: large;
+        text-align: center;
+        justify-content: center;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 5px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
     }
 
     .title1 {
@@ -132,9 +176,9 @@ header {
         letter-spacing: 12.8571px;
         text-transform: uppercase;
         margin: 0;
-    
+
     }
-    
+
     .description-title p {
         display: flex;
         flex-direction: column;
@@ -151,20 +195,13 @@ header {
         padding: 0;
     }
 
-    .title {
+
+
+    .title1 {
         display: none;
     }
 
-    .title1 {
-        display: inline;
-    }
 
-    .title1 img {
-        transform: rotate(-90deg);
-        width: 100%;
-        height: 50px;
-        object-fit: cover;
-    }
 
 
 }
@@ -184,7 +221,7 @@ header {
         letter-spacing: 11.8571px;
         text-transform: uppercase;
         margin: 0;
-    
+
     }
 
     .description-title p {
@@ -201,6 +238,22 @@ header {
         margin: 0;
         margin-bottom: 300px;
         padding: 0;
+    }
+
+    .title1 img {
+        transform: rotate(-90deg);
+        width: 100%;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .title1 {
+        display: flex;
     }
 }
 
@@ -219,7 +272,7 @@ header {
         letter-spacing: 4px;
         text-transform: uppercase;
         margin: 0;
-    
+
     }
 
     .description-title p {
