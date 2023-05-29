@@ -56,7 +56,7 @@ h3 {
     letter-spacing: 8.8571px;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 520px;
+    margin-bottom: 600px;
 }
 
 header {
@@ -95,6 +95,29 @@ header {
 
 .title1 {
     display: none;
+}
+
+.aboutKZ {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.aboutKZ-text {
+    flex-basis: 50%;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.aboutKZ-image {
+    flex-basis: 50%;
+}
+
+.aboutKZ-image img {
+    width: 100%;
+    padding: 100px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -195,15 +218,15 @@ header {
         padding: 0;
     }
 
-
-
     .title1 {
         display: none;
     }
 
-
-
-
+    .aboutKZ {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 820px) {
