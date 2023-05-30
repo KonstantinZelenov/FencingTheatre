@@ -123,8 +123,14 @@ header {
 .aboutKZ-text p {
     text-align: justify;
     font-weight: 300;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
 
+}
+
+.aboutProject-text {
+    text-align: justify;
+    font-weight: 300;
+    letter-spacing: 3px;
 }
 
 .aboutProject {
@@ -160,24 +166,22 @@ header {
     position: absolute;
     width: 100px;
     left: 0;
-    top: 0;
+    top: -20%;
 }
 
 .list2 {
     position: absolute;
     width: 100px;
     left: 20%;
-    top: 40%;
+    top: 0;
 }
 
 .list3 {
     position: absolute;
     width: 100px;
     left: 40%;
-    top: 80%;
-
+    top: 20%;
 }
-
 
 @media screen and (max-width: 1200px) {
     .topnavLinks {
@@ -291,6 +295,45 @@ header {
         flex-direction: column;
         flex-wrap: wrap;
     }
+
+    .aboutProject {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        padding: 20px;
+        margin-top: 15px;
+        margin-bottom: 150px;
+
+    }
+
+    .aboutProject-text {
+        flex-basis: 50%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .list1 {
+        position: absolute;
+        width: 100px;
+        left: 0;
+        top: -20%;
+    }
+    
+    .list2 {
+        position: absolute;
+        width: 100px;
+        left: 30%;
+        top: 0;
+    }
+    
+    .list3 {
+        position: absolute;
+        width: 100px;
+        left: 60%;
+        top: 20%;
+    }
 }
 
 @media screen and (max-width: 820px) {
@@ -342,6 +385,7 @@ header {
     .title1 {
         display: flex;
     }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -389,6 +433,24 @@ header {
     .aboutKZ-image img {
         width: 100%;
         padding: 20px;
+    }
+
+    .list1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .list2 {
+        position: absolute;
+        left: 8%;
+        top: 400%;
+    }
+    
+    .list3 {
+        position: absolute;
+        left: 13%;
+        top: 800%;
     }
 
 }
