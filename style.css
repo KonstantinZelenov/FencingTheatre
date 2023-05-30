@@ -214,6 +214,7 @@ header {
     align-items: center;
     padding: 10px;
     flex-direction: column;
+    justify-content: center;
 }
 
 .video-content {
