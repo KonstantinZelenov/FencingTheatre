@@ -36,7 +36,7 @@ h2 {
 
 }
 
-h3 {
+h1 {
     font-weight: 300;
     font-size: 20px;
     letter-spacing: 4px;
@@ -199,7 +199,9 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 20px;
-    height:500px;
+    height: 500px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .video-discription {
@@ -375,6 +377,16 @@ header {
         left: 60%;
         top: 20%;
     }
+
+    .videoContent {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 20px;
+        height: 500px;
+        margin-top: 500px;
+        margin-bottom: 100px;
+    }
 }
 
 @media screen and (max-width: 820px) {
@@ -520,5 +532,10 @@ header {
         width: calc(300px + 40px);
         height: calc(200px + 30px);
     }
+
+
+.aboutProject-text p {
+    margin-bottom: 150px;
+}
 
 }
