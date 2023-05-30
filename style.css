@@ -107,8 +107,10 @@ header {
 .aboutKZ-text {
     flex-basis: 50%;
     padding: 30px;
-    align-items: center;
+    justify-content: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .aboutKZ-image {
@@ -131,6 +133,8 @@ header {
     text-align: justify;
     font-weight: 300;
     letter-spacing: 3px;
+    display: flex;
+    flex-direction: column;
 }
 
 .aboutProject {
@@ -209,6 +213,7 @@ header {
     flex-basis: 50%;
     align-items: center;
     padding: 10px;
+    flex-direction: column;
 }
 
 .video-content {
@@ -216,7 +221,7 @@ header {
     flex-basis: 50%;
     padding: 10px;
     border: solid 2px white;
-    
+
 }
 
 .video-discription p {
@@ -234,7 +239,7 @@ hr {
     display: flex;
     flex-direction: column;
     margin-bottom: 150px;
-    margin-top: 150px;
+    margin-top: 350px;
     width: 100%;
 }
 
@@ -296,6 +301,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 a:hover {
     color: rgb(198, 10, 13);
 }
@@ -307,7 +313,7 @@ a:hover {
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(241, 236, 236, 0.4);
     white-space: pre-line;
     letter-spacing: 1.8px;
 }
@@ -474,14 +480,14 @@ h4 {
         left: 0;
         top: -20%;
     }
-    
+
     .list2 {
         position: absolute;
         width: 100px;
         left: 30%;
         top: 0;
     }
-    
+
     .list3 {
         position: absolute;
         width: 100px;
@@ -623,13 +629,13 @@ h4 {
         left: 0;
         top: 0;
     }
-    
+
     .list2 {
         position: absolute;
         left: 8%;
         top: 600%;
     }
-    
+
     .list3 {
         position: absolute;
         left: 13%;
@@ -664,8 +670,8 @@ h4 {
     }
 
 
-.aboutProject-text p {
-    margin-bottom: 150px;
-}
+    .aboutProject-text p {
+        margin-bottom: 150px;
+    }
 
 }
