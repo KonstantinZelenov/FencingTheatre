@@ -106,7 +106,7 @@ header {
 
 .aboutKZ-text {
     flex-basis: 50%;
-    padding: 20px;
+    padding: 30px;
     align-items: center;
     display: flex;
 }
@@ -117,8 +117,67 @@ header {
 
 .aboutKZ-image img {
     width: 100%;
-    padding: 100px;
+    padding: 80px;
 }
+
+.aboutKZ-text p {
+    text-align: justify;
+    font-weight: 300;
+    letter-spacing: 4px;
+
+}
+
+.aboutProject {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.photoFlower {
+    flex-basis: 50%;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.aboutProject-text {
+    flex-basis: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.photoFlower img {
+    width: 300px;
+    height: 200px;
+}
+
+.list1 {
+    position: absolute;
+    width: 100px;
+    left: 0;
+    top: 0;
+}
+
+.list2 {
+    position: absolute;
+    width: 100px;
+    left: 20%;
+    top: 40%;
+}
+
+.list3 {
+    position: absolute;
+    width: 100px;
+    left: 40%;
+    top: 80%;
+
+}
+
 
 @media screen and (max-width: 1200px) {
     .topnavLinks {
@@ -181,6 +240,11 @@ header {
 
     .title1 {
         display: none;
+    }
+
+    .aboutKZ-image img {
+        width: 100%;
+        padding: 60px;
     }
 }
 
@@ -320,6 +384,11 @@ header {
         letter-spacing: 3px;
         text-transform: uppercase;
         text-align: center;
+    }
+
+    .aboutKZ-image img {
+        width: 100%;
+        padding: 20px;
     }
 
 }
