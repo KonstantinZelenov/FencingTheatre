@@ -225,6 +225,117 @@ header {
     letter-spacing: 3px;
 }
 
+hr {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+    margin-top: 150px;
+    width: 100%;
+}
+
+.main_title {
+    display: flex;
+    justify-content: center;
+}
+
+.main_title_navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1.97px;
+    text-transform: uppercase;
+    display: flex;
+
+}
+
+footer {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.alink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alink a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    flex-shrink: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: rgb(198, 10, 13);
+}
+
+.alink p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.4);
+    white-space: pre-line;
+    letter-spacing: 1.8px;
+}
+
+h4 {
+    display: inline-block;
+    flex-shrink: 0;
+    padding-left: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1.97px;
+    text-transform: uppercase;
+}
+
+.footerlink {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.icons img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
 
 @media screen and (max-width: 1200px) {
     .topnavLinks {
@@ -385,6 +496,25 @@ header {
         padding: 20px;
         height: 500px;
         margin-top: 500px;
+        margin-bottom: 100px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .alink {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .nav {
         margin-bottom: 100px;
     }
 }
