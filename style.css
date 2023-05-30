@@ -456,20 +456,40 @@ header {
     .list2 {
         position: absolute;
         left: 8%;
-        top: 400%;
+        top: 600%;
     }
     
     .list3 {
         position: absolute;
         left: 13%;
-        top: 800%;
+        top: 1200%;
     }
 
     .list1:hover {
         position: absolute;
         left: 0;
-        top: -20%;
+        top: -40%;
         z-index: 2;
+        width: calc(300px + 40px);
+        height: calc(200px + 30px);
+    }
+
+    .list2:hover {
+        position: absolute;
+        left: 0;
+        top: 400%;
+        z-index: 2;
+        width: calc(300px + 40px);
+        height: calc(200px + 30px);
+    }
+
+    .list3:hover {
+        position: absolute;
+        left: 0;
+        top: 1000%;
+        z-index: 2;
+        width: calc(300px + 40px);
+        height: calc(200px + 30px);
     }
 
 }
