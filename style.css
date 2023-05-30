@@ -68,6 +68,7 @@ header {
     padding: 0 25px 0 25px;
     position: fixed;
     top: 0;
+    background-color: black;
 }
 
 .topnavLinks {
@@ -169,11 +170,22 @@ header {
     top: -20%;
 }
 
+.list1:hover {
+    position: absolute;
+    left: 0;
+    top: -20%;
+    z-index: 2;
+}
+
 .list2 {
     position: absolute;
     width: 100px;
     left: 20%;
     top: 0;
+}
+
+.list2:hover {
+    z-index: 2;
 }
 
 .list3 {
@@ -451,6 +463,13 @@ header {
         position: absolute;
         left: 13%;
         top: 800%;
+    }
+
+    .list1:hover {
+        position: absolute;
+        left: 0;
+        top: -20%;
+        z-index: 2;
     }
 
 }
