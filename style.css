@@ -68,7 +68,6 @@ header {
     padding: 0 25px 0 25px;
     position: fixed;
     top: 0;
-    background-color: black;
 }
 
 .topnavLinks {
@@ -194,6 +193,36 @@ header {
     left: 40%;
     top: 20%;
 }
+
+.videoContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    height:500px;
+}
+
+.video-discription {
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    padding: 10px;
+}
+
+.video-content {
+    display: flex;
+    flex-basis: 50%;
+    padding: 10px;
+    border: solid 2px white;
+    
+}
+
+.video-discription p {
+    text-align: justify;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
 
 @media screen and (max-width: 1200px) {
     .topnavLinks {
