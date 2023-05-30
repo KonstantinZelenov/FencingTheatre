@@ -236,7 +236,7 @@ hr {
     margin-right: 15px;
 }
 
-.nav {
+nav {
     display: flex;
     flex-direction: column;
     margin-bottom: 150px;
@@ -521,7 +521,7 @@ h4 {
         margin-bottom: 40px;
     }
 
-    .nav {
+    nav {
         margin-bottom: 100px;
     }
 }
