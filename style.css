@@ -448,7 +448,7 @@ form {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 200px;
     margin-bottom: 100px;
     align-items: center;
 }
@@ -663,6 +663,10 @@ form {
         display: flex;
         flex-direction: column;
     }
+
+    iframe {
+        height: 500px;
+      }
 }
 
 @media screen and (max-width: 820px) {
@@ -714,6 +718,10 @@ form {
     .title1 {
         display: flex;
     }
+
+    iframe {
+        height: 400px;
+      }
 
 }
 
@@ -838,5 +846,9 @@ form {
       }
       fieldset {
         border-radius: 1em;
+      }
+
+      iframe {
+        height: 200px;
       }
 }
