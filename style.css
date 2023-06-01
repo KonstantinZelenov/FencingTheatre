@@ -367,6 +367,17 @@ a:hover {
     border-radius: 50%;
 }
 
+.dropdown-content img {
+    width: 30px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.topnavLinks img {
+    width: 25px;
+    height: 15px;
+}
+
 
 form {
     margin: 0 auto;
