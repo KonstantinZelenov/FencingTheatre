@@ -24,6 +24,14 @@ body {
     align-items: center;
 }
 
+h1 {
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 h2 {
     padding-top: 200px;
     display: flex;
@@ -40,12 +48,16 @@ h2 {
 
 }
 
-h1 {
-    font-weight: 300;
-    font-size: 20px;
-    letter-spacing: 4px;
+h4 {
+    display: inline-block;
+    flex-shrink: 0;
+    padding-left: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1.97px;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .description-title p {
@@ -323,18 +335,6 @@ a:hover {
     letter-spacing: 1.8px;
 }
 
-h4 {
-    display: inline-block;
-    flex-shrink: 0;
-    padding-left: 0px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 1.97px;
-    text-transform: uppercase;
-}
-
 .footerlink {
     display: flex;
     flex-direction: row;
@@ -425,6 +425,8 @@ form {
     flex-direction: column;
     padding: 5px;
     align-items: center;
+    text-align: justify;
+    padding: 25px;
 }
 
 
@@ -608,6 +610,11 @@ form {
 
     nav {
         margin-bottom: 100px;
+    }
+
+    .Columns {
+        display: flex;
+        flex-direction: column;
     }
 }
 
