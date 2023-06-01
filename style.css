@@ -48,6 +48,15 @@ h2 {
 
 }
 
+h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1.97px;
+    text-transform: uppercase;
+}
+
 h4 {
     display: inline-block;
     flex-shrink: 0;
@@ -58,6 +67,15 @@ h4 {
     line-height: 22px;
     letter-spacing: 1.97px;
     text-transform: uppercase;
+}
+
+h5 {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 1.97px;
 }
 
 .description-title p {
@@ -429,7 +447,12 @@ form {
     padding: 25px;
 }
 
-
+.column p {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 1.8px;
+}
 
 @media screen and (max-width: 1200px) {
     .topnavLinks {
