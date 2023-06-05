@@ -660,7 +660,7 @@ form {
         margin-bottom: 100px;
     }
 
-    .Columns {
+    .columns {
         display: flex;
         flex-direction: column;
     }
