@@ -454,7 +454,7 @@ form {
     align-items: center;
 }
 
-.Columns {
+.columns {
     display: flex;
     flex-direction: row;
 }
