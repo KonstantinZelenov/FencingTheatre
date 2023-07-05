@@ -13,7 +13,6 @@ body {
     background-color: black;
     color: antiquewhite;
     padding: 0;
-    margin: 0;
     background-image: url(https://sun9-25.userapi.com/impg/cZIeB5DMK92czV3RBVtEz0we5YPFUrG8_Ws2Ag/DXT6oAZ41LY.jpg?size=1080x721&quality=96&sign=f966be6f7c44eb687f7b06e289a7160c&type=album);
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,12 +110,9 @@ header {
 }
 
 .topnavLinks a {
-    text-decoration: none;
     color: antiquewhite;
     width: 120px;
-    font-size: large;
     text-align: center;
-    justify-content: center;
     font-weight: 300;
     font-size: 15px;
     line-height: 5px;
@@ -331,8 +327,6 @@ footer {
 }
 
 .alink a {
-    color: inherit;
-    text-decoration: none;
     margin: 0;
     padding: 0;
     font-style: normal;
@@ -479,75 +473,6 @@ form {
     padding: 10px 0 10px 0;
  }
 
-@media screen and (max-width: 1200px) {
-    .topnavLinks {
-        display: none;
-    }
-
-    .dropdown {
-        display: flex;
-        align-items: center;
-        position: relative;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        right: 50%;
-        top: 50%;
-        background-color: rgb(33, 32, 32);
-        min-width: 300px;
-        padding: 12px 16px;
-        z-index: 1;
-        height: 310px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        color: antiquewhite;
-        justify-content: center;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-    .dropdown img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .dropdown p {
-        display: flex;
-        justify-content: center;
-        font-size: 20px;
-        font-weight: 300;
-        line-height: 60px;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-    }
-
-    .dropdown a {
-        text-decoration: none;
-        color: antiquewhite;
-        width: 120px;
-        font-size: large;
-        text-align: center;
-        justify-content: center;
-        font-weight: 300;
-        font-size: 15px;
-        line-height: 5px;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-    }
-
-    .title1 {
-        display: none;
-    }
-
-    .aboutKZ-image img {
-        width: 100%;
-        padding: 60px;
-    }
-}
-
 @media screen and (max-width: 1024px) {
 
     h2 {
@@ -668,6 +593,70 @@ form {
     iframe {
         height: 500px;
       }
+
+      .topnavLinks {
+        display: none;
+    }
+
+    .dropdown {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        background-color: rgb(33, 32, 32);
+        min-width: 300px;
+        padding: 12px 16px;
+        z-index: 1;
+        height: 310px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        color: antiquewhite;
+        justify-content: center;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .dropdown p {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 60px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+
+    .dropdown a {
+        color: antiquewhite;
+        width: 120px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 5px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+
+    .title1 {
+        display: none;
+    }
+
+    .aboutKZ-image img {
+        width: 100%;
+        padding: 60px;
+    }
 }
 
 @media screen and (max-width: 820px) {
@@ -796,8 +785,8 @@ form {
         left: 0;
         top: -40%;
         z-index: 2;
-        width: calc(300px + 40px);
-        height: calc(200px + 30px);
+        width: 340px;
+        height: 230px;
     }
 
     .list2:hover {
@@ -805,8 +794,8 @@ form {
         left: 0;
         top: 400%;
         z-index: 2;
-        width: calc(300px + 40px);
-        height: calc(200px + 30px);
+        width: 340px;
+        height: 230px;
     }
 
     .list3:hover {
@@ -814,8 +803,8 @@ form {
         left: 0;
         top: 1000%;
         z-index: 2;
-        width: calc(300px + 40px);
-        height: calc(200px + 30px);
+        width: 340px;
+        height: 230px;
     }
 
 
