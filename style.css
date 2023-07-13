@@ -92,7 +92,7 @@ h5 {
     margin-bottom: 600px;
 }
 
-header {
+.header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -385,19 +385,23 @@ a:hover {
 form {
     margin: 0 auto;
     width: 50%;
-    padding: 1em;
+    padding: 16px;
     border: 1px solid #ccc;
-    border-radius: 1em;
+    border-radius: 16px;
   }
   
-  ul {
+  .price_list {
     list-style: none;
     padding: 0;
     margin: 0;
   }
+
+  .price_list p {
+    margin: 0;
+  }
   
   form li + li {
-    margin-top: 1em;
+    margin-top: 16px;
   }
   
   label {
@@ -408,7 +412,7 @@ form {
   
   input,
   textarea, select {
-    font: 1em sans-serif;
+    font: 16px sans-serif;
     width: 77%;
     box-sizing: border-box;
     border: 1px solid #999;
@@ -422,7 +426,7 @@ form {
   
   textarea {
     vertical-align: top;
-    height: 5em;
+    height: 80px;
   }
   
   .button {
@@ -430,11 +434,11 @@ form {
   }
   
   button {
-    margin-left: 0.5em;
+    margin-left: 8px;
   }
 
   fieldset {
-    border-radius: 1em;
+    border-radius: 16px;
   }
 
   section {
@@ -464,13 +468,17 @@ form {
 
 .column p {
     font-weight: 300;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 22px;
     letter-spacing: 1.8px;
 }
 
  li {
     padding: 10px 0 10px 0;
+ }
+
+ .form_list {
+    list-style: none;
  }
 
 @media screen and (width < 1030px) {
@@ -616,7 +624,6 @@ form {
         height: 310px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         color: antiquewhite;
-        justify-content: center;
     }
 
     .dropdown:hover .dropdown-content {
@@ -816,9 +823,9 @@ form {
         
         margin: 200px 0 100px 0;
         width: 90%;
-        padding: 1em;
+        padding: 16px;
         border: 1px solid #ccc;
-        border-radius: 1em;
+        border-radius: 16px;
       }
 
       label {
@@ -829,13 +836,13 @@ form {
       
       input,
       textarea, select {
-        font: 1em sans-serif;
+        font: 16px sans-serif;
         width: 100%;
         box-sizing: border-box;
         border: 1px solid #999;
       }
       fieldset {
-        border-radius: 1em;
+        border-radius: 16px;
       }
 
       iframe {
@@ -852,7 +859,7 @@ form {
         margin-bottom: 100px;
         align-items: center;
     }
-    header {
+    .header {
         background-color: #00000000;
     }
 
