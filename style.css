@@ -92,8 +92,6 @@ h5 {
     letter-spacing: 1.97px;
 }
 
-
-
 .header {
     display: flex;
     flex-direction: row;
@@ -240,7 +238,7 @@ h5 {
     top: 20%;
 }
 
-.videoContent {
+.video-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -250,7 +248,7 @@ h5 {
     margin-bottom: 100px;
 }
 
-.video-discription {
+.video-content__discription {
     display: flex;
     flex-basis: 50%;
     align-items: center;
@@ -259,19 +257,19 @@ h5 {
     justify-content: center;
 }
 
-.video-content {
+.video-content__discription p {
+    text-align: justify;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-indent: 1.5cm;
+}
+
+.video-content__video {
     display: flex;
     flex-basis: 50%;
     padding: 10px;
     border: solid 2px white;
 
-}
-
-.video-discription p {
-    text-align: justify;
-    font-weight: 300;
-    letter-spacing: 3px;
-    text-indent: 1.5cm;
 }
 
 hr {
@@ -397,16 +395,6 @@ form {
     border-radius: 16px;
   }
   
-  .price_list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .price_list p {
-    margin: 0;
-  }
-  
   form li + li {
     margin-top: 16px;
   }
@@ -459,33 +447,42 @@ form {
     align-items: center;
 }
 
-.columns {
+.section-price__columns {
     display: flex;
     flex-direction: row;
     padding-left: 0;
 }
 
-.column {
+.section-price__column {
     display: flex;
     flex-direction: column;
-    padding: 5px;
     align-items: center;
     text-align: justify;
     padding: 25px;
 }
 
-.column p {
+.section-price__column p {
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 1.8px;
 }
 
- li {
+.section-price__price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+.section-price__price-list p {
+    margin: 0;
+  }
+
+.section-price__price-list li {
     padding: 10px 0 10px 0;
  }
 
- .form_list {
+ .form-list {
     list-style: none;
     padding-left: 0;
  }
@@ -578,7 +575,7 @@ form {
         top: 20%;
     }
 
-    .videoContent {
+    .video-content {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -587,6 +584,10 @@ form {
         margin-top: 500px;
         margin-bottom: 100px;
     }
+
+    .video-content__iframe {
+        height: 500px;
+      }
 
     .links {
         display: flex;
@@ -607,14 +608,10 @@ form {
         margin-bottom: 100px;
     }
 
-    .columns {
+    .section-price__columns {
         display: flex;
         flex-direction: column;
     }
-
-    iframe {
-        height: 500px;
-      }
 
       .topnavLinks {
         display: none;
@@ -727,7 +724,7 @@ form {
         display: flex;
     }
 
-    iframe {
+    .video-content__iframe {
         height: 400px;
       }
 
@@ -856,7 +853,7 @@ form {
         border-radius: 16px;
       }
 
-      iframe {
+      .video-content__iframe {
         height: 200px;
       }
 
