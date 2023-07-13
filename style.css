@@ -317,6 +317,8 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 30px;
+    list-style: none;
+    padding-left: 0;
 }
 
 .alink {
