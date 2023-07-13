@@ -455,6 +455,7 @@ form {
 .columns {
     display: flex;
     flex-direction: row;
+    padding-left: 0;
 }
 
 .column {
