@@ -47,6 +47,21 @@ h1 {
 
 }
 
+.description-title p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 5px;
+    letter-spacing: 8.8571px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 600px;
+}
+
 h3 {
     font-style: normal;
     font-weight: 500;
@@ -77,20 +92,7 @@ h5 {
     letter-spacing: 1.97px;
 }
 
-.description-title p {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 5px;
-    letter-spacing: 8.8571px;
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 600px;
-}
+
 
 .header {
     display: flex;
@@ -128,13 +130,6 @@ h5 {
     display: none;
 }
 
-.aboutKZ {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 100px;
-}
-
 .padding {
     font-weight: bold;
     font-size: 24px;
@@ -142,7 +137,14 @@ h5 {
     padding-left: 2px;
 }
 
-.aboutKZ-text {
+.about-trainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.about-trainer_text {
     flex-basis: 50%;
     padding: 30px;
     justify-content: center;
@@ -151,16 +153,7 @@ h5 {
     align-items: center;
 }
 
-.aboutKZ-image {
-    flex-basis: 50%;
-}
-
-.aboutKZ-image img {
-    width: 100%;
-    padding: 80px;
-}
-
-.aboutKZ-text p {
+.about-trainer_text p {
     text-align: justify;
     font-weight: 300;
     letter-spacing: 3px;
@@ -168,7 +161,16 @@ h5 {
     margin: 0;
 }
 
-.aboutProject {
+.about-trainer_image {
+    flex-basis: 50%;
+}
+
+.about-trainer_image img {
+    width: 100%;
+    padding: 80px;
+}
+
+.about-project {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -177,7 +179,7 @@ h5 {
     margin-bottom: 150px;
 }
 
-.aboutProject-text {
+.about-project_text {
     text-align: justify;
     font-weight: 300;
     letter-spacing: 3px;
@@ -188,7 +190,7 @@ h5 {
     align-items: center;
 }
 
-.aboutProject-text p {
+.about-project_text p {
     text-indent: 1.5cm;
 }
 
@@ -446,7 +448,7 @@ form {
     border-radius: 16px;
   }
 
-  section {
+  .section-price {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -526,13 +528,18 @@ form {
         display: none;
     }
 
-    .aboutKZ {
+    .about-trainer {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
 
-    .aboutProject {
+    .about-trainer_image img {
+        width: 100%;
+        padding: 60px;
+    }
+
+    .about-project {
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: nowrap;
@@ -542,7 +549,7 @@ form {
 
     }
 
-    .aboutProject-text {
+    .about-project_text {
         flex-basis: 50%;
         padding: 10px;
         display: flex;
@@ -667,10 +674,7 @@ form {
         display: none;
     }
 
-    .aboutKZ-image img {
-        width: 100%;
-        padding: 60px;
-    }
+    
 }
 
 @media screen and (width < 820px) {
@@ -771,7 +775,7 @@ form {
         text-align: center;
     }
 
-    .aboutKZ-image img {
+    .about-trainer_image img {
         width: 100%;
         padding: 20px;
     }
@@ -822,7 +826,7 @@ form {
     }
 
 
-    .aboutProject-text p {
+    .about-project_text p {
         margin-bottom: 150px;
     }
 
@@ -856,7 +860,7 @@ form {
         height: 200px;
       }
 
-      section {
+      .section-price {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
