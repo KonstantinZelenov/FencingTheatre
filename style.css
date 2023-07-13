@@ -144,7 +144,7 @@ h5 {
     margin-top: 100px;
 }
 
-.about-trainer_text {
+.about-trainer__text {
     flex-basis: 50%;
     padding: 30px;
     justify-content: center;
@@ -153,7 +153,7 @@ h5 {
     align-items: center;
 }
 
-.about-trainer_text p {
+.about-trainer__text p {
     text-align: justify;
     font-weight: 300;
     letter-spacing: 3px;
@@ -161,11 +161,11 @@ h5 {
     margin: 0;
 }
 
-.about-trainer_image {
+.about-trainer__image {
     flex-basis: 50%;
 }
 
-.about-trainer_image img {
+.about-trainer__image img {
     width: 100%;
     padding: 80px;
 }
@@ -179,7 +179,7 @@ h5 {
     margin-bottom: 150px;
 }
 
-.about-project_text {
+.about-project__text {
     text-align: justify;
     font-weight: 300;
     letter-spacing: 3px;
@@ -190,11 +190,11 @@ h5 {
     align-items: center;
 }
 
-.about-project_text p {
+.about-project__text p {
     text-indent: 1.5cm;
 }
 
-.photoFlower {
+.about-project__image-list {
     flex-basis: 50%;
     padding: 10px;
     position: relative;
@@ -203,37 +203,37 @@ h5 {
     list-style: none;
 }
 
-.photoFlower img {
+.about-project__image-list img {
     width: 300px;
     height: 200px;
 }
 
-.list1 {
+.about-project__image-first {
     position: absolute;
     width: 100px;
     left: 0;
     top: -20%;
 }
 
-.list1:hover {
+.about-project__image-first:hover {
     position: absolute;
     left: 0;
     top: -20%;
     z-index: 2;
 }
 
-.list2 {
+.about-project__image-second {
     position: absolute;
     width: 100px;
     left: 20%;
     top: 0;
 }
 
-.list2:hover {
+.about-project__image-second:hover {
     z-index: 2;
 }
 
-.list3 {
+.about-project__image-third {
     position: absolute;
     width: 100px;
     left: 40%;
@@ -534,7 +534,7 @@ form {
         flex-wrap: wrap;
     }
 
-    .about-trainer_image img {
+    .about-trainer__image img {
         width: 100%;
         padding: 60px;
     }
@@ -549,7 +549,7 @@ form {
 
     }
 
-    .about-project_text {
+    .about-project__text {
         flex-basis: 50%;
         padding: 10px;
         display: flex;
@@ -557,21 +557,21 @@ form {
         margin-top: 10px;
     }
 
-    .list1 {
+    .about-project__image-first {
         position: absolute;
         width: 100px;
         left: 0;
         top: -20%;
     }
 
-    .list2 {
+    .about-project__image-second {
         position: absolute;
         width: 100px;
         left: 30%;
         top: 0;
     }
 
-    .list3 {
+    .about-project__image-third {
         position: absolute;
         width: 100px;
         left: 60%;
@@ -775,30 +775,30 @@ form {
         text-align: center;
     }
 
-    .about-trainer_image img {
+    .about-trainer__image img {
         width: 100%;
         padding: 20px;
     }
 
-    .list1 {
+    .about-project__image-first {
         position: absolute;
         left: 0;
         top: 0;
     }
 
-    .list2 {
+    .about-project__image-second {
         position: absolute;
         left: 8%;
         top: 600%;
     }
 
-    .list3 {
+    .about-project__image-third {
         position: absolute;
         left: 13%;
         top: 1200%;
     }
 
-    .list1:hover {
+    .about-project__image-first:hover {
         position: absolute;
         left: 0;
         top: -40%;
@@ -807,7 +807,7 @@ form {
         height: 230px;
     }
 
-    .list2:hover {
+    .about-project__image-second:hover {
         position: absolute;
         left: 0;
         top: 400%;
@@ -816,7 +816,7 @@ form {
         height: 230px;
     }
 
-    .list3:hover {
+    .about-project__image-third:hover {
         position: absolute;
         left: 0;
         top: 1000%;
@@ -826,7 +826,7 @@ form {
     }
 
 
-    .about-project_text p {
+    .about-project__text p {
         margin-bottom: 150px;
     }
 
