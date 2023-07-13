@@ -303,7 +303,7 @@ nav {
 
 }
 
-footer {
+.footer {
     background-color: black;
     padding: 10px;
     text-align: center;
@@ -364,6 +364,8 @@ a:hover {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    padding-left: 0;
+    list-style: none;
 }
 
 .icons img {
