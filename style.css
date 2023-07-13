@@ -336,29 +336,6 @@ hr {
     letter-spacing: 1.8px;
 }
 
-.footer {
-    background-color: black;
-    padding: 10px;
-    text-align: center;
-    margin-top: 30px;
-    width: 100%;
-}
-
-.footerlink {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    padding-left: 0;
-    list-style: none;
-}
-
-.icons img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-
 .dropdown-content img {
     width: 30px;
     height: 15px;
@@ -386,48 +363,54 @@ form {
     padding: 16px;
     border: 1px solid #ccc;
     border-radius: 16px;
-  }
-  
-  form li + li {
+}
+
+.form-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+form li+li {
     margin-top: 16px;
-  }
-  
-  label {
+}
+
+label {
     display: inline-block;
     width: 90px;
     text-align: right;
-  }
-  
-  input,
-  textarea, select {
+}
+
+input,
+textarea,
+select {
     font: 16px sans-serif;
     width: 77%;
     box-sizing: border-box;
     border: 1px solid #999;
-  }
-  
-  input:focus,
-  textarea:focus,
-  select:focus {
+}
+
+input:focus,
+textarea:focus,
+select:focus {
     border-color: #000;
-  }
-  
-  textarea {
+}
+
+textarea {
     vertical-align: top;
     height: 80px;
-  }
-  
-  .button {
-    padding-left: 90px; 
-  }
-  
-  button {
-    margin-left: 8px;
-  }
+}
 
-  fieldset {
+.button {
+    padding-left: 90px;
+}
+
+button {
+    margin-left: 8px;
+}
+
+fieldset {
     border-radius: 16px;
-  }
+}
 
 .section-price {
     width: 100%;
@@ -465,20 +448,38 @@ form {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
+}
 
 .section-price__price-list p {
     margin: 0;
-  }
+}
 
 .section-price__price-list li {
     padding: 10px 0 10px 0;
- }
+}
 
- .form-list {
-    list-style: none;
+.footer {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
     padding-left: 0;
- }
+    list-style: none;
+}
+
+.footer__icons img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
 
 @media screen and (width < 1030px) {
 
@@ -580,7 +581,7 @@ form {
 
     .video-content__iframe {
         height: 500px;
-      }
+    }
 
     .navbar {
         margin-bottom: 100px;
@@ -606,7 +607,7 @@ form {
         flex-direction: column;
     }
 
-      .topnavLinks {
+    .topnavLinks {
         display: none;
     }
 
@@ -664,7 +665,7 @@ form {
         display: none;
     }
 
-    
+
 }
 
 @media screen and (width < 820px) {
@@ -719,7 +720,7 @@ form {
 
     .video-content__iframe {
         height: 400px;
-      }
+    }
 
 }
 
@@ -768,6 +769,10 @@ form {
     .about-trainer__image img {
         width: 100%;
         padding: 20px;
+    }
+
+    .about-trainer__text {
+        margin-top: 100px;
     }
 
     .about-project__image-first {
@@ -821,36 +826,38 @@ form {
     }
 
     form {
-        
+
         margin: 200px 0 100px 0;
         width: 90%;
         padding: 16px;
         border: 1px solid #ccc;
         border-radius: 16px;
-      }
+    }
 
-      label {
+    label {
         display: inline-block;
         width: 20px;
         text-align: right;
-      }
-      
-      input,
-      textarea, select {
+    }
+
+    input,
+    textarea,
+    select {
         font: 16px sans-serif;
         width: 100%;
         box-sizing: border-box;
         border: 1px solid #999;
-      }
-      fieldset {
+    }
+
+    fieldset {
         border-radius: 16px;
-      }
+    }
 
-      .video-content__iframe {
+    .video-content__iframe {
         height: 200px;
-      }
+    }
 
-      .section-price {
+    .section-price {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -860,6 +867,7 @@ form {
         margin-bottom: 100px;
         align-items: center;
     }
+
     .header {
         background-color: #00000000;
     }
