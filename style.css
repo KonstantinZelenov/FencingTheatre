@@ -277,7 +277,7 @@ hr {
     margin-right: 15px;
 }
 
-nav {
+.navbar {
     display: flex;
     flex-direction: column;
     margin-bottom: 150px;
@@ -285,12 +285,7 @@ nav {
     width: 100%;
 }
 
-.main_title {
-    display: flex;
-    justify-content: center;
-}
-
-.main_title_navbar {
+.navbar__title {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -300,19 +295,9 @@ nav {
     line-height: 22px;
     letter-spacing: 1.97px;
     text-transform: uppercase;
-    display: flex;
-
 }
 
-.footer {
-    background-color: black;
-    padding: 10px;
-    text-align: center;
-    margin-top: 30px;
-    width: 100%;
-}
-
-.links {
+.navbar__links {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -322,14 +307,14 @@ nav {
     padding-left: 0;
 }
 
-.alink {
+.navbar__link {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.alink a {
+.navbar__link a {
     margin: 0;
     padding: 0;
     font-style: normal;
@@ -339,16 +324,7 @@ nav {
     line-height: 22px;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-a:hover {
-    color: rgb(198, 10, 13);
-}
-
-.alink p {
+.navbar__link p {
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -358,6 +334,14 @@ a:hover {
     color: rgba(241, 236, 236, 0.4);
     white-space: pre-line;
     letter-spacing: 1.8px;
+}
+
+.footer {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
 }
 
 .footerlink {
@@ -384,6 +368,15 @@ a:hover {
 .topnavLinks img {
     width: 25px;
     height: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(198, 10, 13);
 }
 
 
@@ -436,7 +429,7 @@ form {
     border-radius: 16px;
   }
 
-  .section-price {
+.section-price {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -589,23 +582,23 @@ form {
         height: 500px;
       }
 
-    .links {
+    .navbar {
+        margin-bottom: 100px;
+    }
+
+    .navbar__links {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         margin-top: 30px;
     }
 
-    .alink {
+    .navbar__link {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-bottom: 40px;
-    }
-
-    nav {
-        margin-bottom: 100px;
     }
 
     .section-price__columns {
