@@ -480,6 +480,7 @@ form {
 
  .form_list {
     list-style: none;
+    padding-left: 0;
  }
 
 @media screen and (width < 1030px) {
