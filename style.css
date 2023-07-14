@@ -129,7 +129,7 @@ h5 {
     display: none;
 }
 
-.dropdown-content img {
+.header__dropdown-menu img {
     width: 30px;
     height: 15px;
     border-radius: 50%;
@@ -357,7 +357,7 @@ a:hover {
 }
 
 
-form {
+.form {
     margin: 0 auto;
     width: 50%;
     padding: 16px;
@@ -365,50 +365,47 @@ form {
     border-radius: 16px;
 }
 
-.form-list {
+.form__list {
     list-style: none;
     padding-left: 0;
 }
 
-form li+li {
+.form__list li {
     margin-top: 16px;
 }
 
-label {
+.form__label {
     display: inline-block;
     width: 90px;
     text-align: right;
 }
 
-input,
-textarea,
-select {
+.form__input,
+.form__textarea,
+.form__select {
     font: 16px sans-serif;
     width: 77%;
     box-sizing: border-box;
     border: 1px solid #999;
 }
 
-input:focus,
-textarea:focus,
-select:focus {
+.form__input:focus,
+.form__textarea:focus,
+.form__select:focus {
     border-color: #000;
 }
 
-textarea {
+.form__textarea {
     vertical-align: top;
     height: 80px;
 }
 
-.button {
+.form__button {
     padding-left: 90px;
+    margin-left: 5px;
 }
 
-button {
-    margin-left: 8px;
-}
-
-fieldset {
+.form__fieldset {
     border-radius: 16px;
 }
 
@@ -571,8 +568,8 @@ fieldset {
         flex-wrap: nowrap;
         padding: 20px;
         height: 500px;
-        margin-top: 500px;
-        margin-bottom: 100px;
+        margin-top: 350px;
+        margin-bottom: 350px;
     }
 
     .video-content__iframe {
@@ -819,30 +816,36 @@ fieldset {
         margin-bottom: 150px;
     }
 
-    form {
+    .form {
         width: 90%;
         padding: 16px;
         border: 1px solid #ccc;
         border-radius: 16px;
     }
 
-    label {
+    .form__label {
         display: inline-block;
         width: 20px;
         text-align: right;
     }
 
-    input,
-    textarea,
-    select {
+    .form__input,
+    .form__textarea,
+    .form__select {
         font: 16px sans-serif;
         width: 100%;
         box-sizing: border-box;
         border: 1px solid #999;
     }
 
-    fieldset {
-        border-radius: 16px;
+    .video-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 20px;
+        height: 500px;
+        margin-top: 500px;
+        margin-bottom: 350px;
     }
 
     .video-content__iframe {
