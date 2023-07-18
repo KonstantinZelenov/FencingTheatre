@@ -29,7 +29,7 @@ ol[class] {
   padding-left: 0;
 }
 
-h1 {
+.header__h1 {
     font-weight: 300;
     font-size: 20px;
     letter-spacing: 4px;
@@ -115,13 +115,13 @@ h5 {
     align-items: center;
 }
 
-.header__links a {
+.header__links li {
     color: antiquewhite;
     width: 120px;
     text-align: center;
     font-weight: 300;
     font-size: 15px;
-    line-height: 5px;
+    line-height: 4px;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
@@ -131,7 +131,7 @@ h5 {
     height: 15px;
 }
 
-.header__dropdown {
+.header__dropdown, .header__icon {
     display: none;
 }
 
@@ -139,10 +139,6 @@ h5 {
     width: 30px;
     height: 15px;
     border-radius: 50%;
-}
-
-.header__icon {
-    display: none;
 }
 
 .header__division {
@@ -473,7 +469,7 @@ a:hover {
     border-radius: 50%;
 }
 
-@media screen and (width < 1030px) {
+@media screen and (width < 1070px) {
 
     .description-title h2 {
         padding-top: 140px;
@@ -611,12 +607,13 @@ a:hover {
         right: 50%;
         top: 50%;
         background-color: rgb(33, 32, 32);
-        min-width: 300px;
+        min-width: 315px;
         padding: 12px 16px;
         z-index: 1;
         height: 310px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         color: antiquewhite;
+        padding: 0;
     }
 
     .header__dropdown:hover .header__dropdown-menu {
@@ -628,14 +625,15 @@ a:hover {
         height: 30px;
     }
 
-    .header__dropdown p {
-        display: flex;
-        justify-content: center;
+    .header__dropdown-menu li {
+        display: block;
+       text-align: center;
         font-size: 20px;
         font-weight: 300;
-        line-height: 60px;
+        line-height: 30px;
         letter-spacing: 4px;
         text-transform: uppercase;
+        margin-top: 10px;
     }
 
     .header__dropdown a {
