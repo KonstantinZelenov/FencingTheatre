@@ -23,6 +23,10 @@ body {
     align-items: center;
 }
 
+p {
+    margin: 0;
+}
+
 ul[class],
 ol[class] {
   list-style: none;
@@ -64,7 +68,6 @@ ol[class] {
     line-height: 5px;
     letter-spacing: 8.8571px;
     text-transform: uppercase;
-    margin: 0;
     margin-bottom: 600px;
 }
 
@@ -169,7 +172,6 @@ h5 {
     font-weight: 300;
     letter-spacing: 3px;
     text-indent: 1.5cm;
-    margin: 0;
 }
 
 .about-trainer__image {
@@ -336,7 +338,6 @@ hr {
 
 .navbar__link p {
     display: inline-block;
-    margin: 0;
     padding: 0;
     font-weight: 300;
     font-size: 16px;
@@ -440,9 +441,6 @@ a:hover {
     margin: 0;
 }
 
-.section-price__price-list p {
-    margin: 0;
-}
 
 .section-price__price-list li {
     padding: 10px 0 10px 0;
@@ -498,7 +496,6 @@ a:hover {
         line-height: 5px;
         letter-spacing: 5px;
         text-transform: uppercase;
-        margin: 0;
         margin-bottom: 400px;
         padding: 0;
     }
@@ -685,7 +682,6 @@ a:hover {
         line-height: 5px;
         letter-spacing: 5px;
         text-transform: uppercase;
-        margin: 0;
         margin-bottom: 300px;
         padding: 0;
     }
@@ -741,7 +737,6 @@ a:hover {
         line-height: 5px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        margin: 0;
         margin-bottom: 180px;
         padding: 0;
     }
@@ -808,7 +803,7 @@ a:hover {
         height: 230px;
     }
 
-    .about-project__text p {
+    .about-project__text {
         margin-bottom: 150px;
     }
 
