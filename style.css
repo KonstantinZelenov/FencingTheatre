@@ -849,7 +849,7 @@ a:hover {
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
-        margin-top: 250px;
+        margin-top: 0;
         margin-bottom: 100px;
         align-items: center;
     }
