@@ -628,23 +628,17 @@ a:hover {
     .header__dropdown-menu li {
         display: block;
        text-align: center;
-        font-size: 20px;
         font-weight: 300;
         line-height: 30px;
         letter-spacing: 4px;
         text-transform: uppercase;
         margin-top: 10px;
+        font-size: 15px;
     }
 
     .header__dropdown a {
         color: antiquewhite;
-        width: 120px;
-        text-align: center;
-        font-weight: 300;
-        font-size: 15px;
-        line-height: 5px;
-        letter-spacing: 4px;
-        text-transform: uppercase;
+        width: 120px; 
     }
 
     .header__icon {
