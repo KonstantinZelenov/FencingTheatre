@@ -51,12 +51,8 @@ ol[class] {
 }
 
 .description-title h2 {
+    text-align: center;
     padding-top: 12.5rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     font-weight: var(--small-font-weight);
     font-size: 3.75rem;
     line-height: 6.25rem;
@@ -66,11 +62,7 @@ ol[class] {
 }
 
 .description-title p {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     font-weight: var(--small-font-weight);
     font-size: 0.9rem;
     line-height: 0.3rem;
