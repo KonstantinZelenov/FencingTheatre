@@ -15,6 +15,7 @@ html {
     --p-text-indent: 3rem;
     --background-color: black;
     --small-font-weight: 300;
+    --big-font-weight: 500;
 }
 
 body {
@@ -31,15 +32,16 @@ body {
     align-items: center;
 }
 
-p, body {
+p,
+body {
     margin: 0;
     padding: 0;
 }
 
 ul[class],
 ol[class] {
-  list-style: none;
-  padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 .header__h1 {
@@ -50,9 +52,13 @@ ol[class] {
     text-align: center;
 }
 
+.description-title {
+    padding-top: 11rem;
+    margin-bottom: 37.5rem;
+}
+
 .description-title h2 {
     text-align: center;
-    padding-top: 12.5rem;
     font-weight: var(--small-font-weight);
     font-size: 3.75rem;
     line-height: 6.25rem;
@@ -64,30 +70,23 @@ ol[class] {
 .description-title p {
     text-align: center;
     font-weight: var(--small-font-weight);
-    font-size: 0.9rem;
     line-height: 0.3rem;
     letter-spacing: 0.56rem;
     text-transform: uppercase;
-    margin-bottom: 37.5rem;
 }
 
-h3, h4, h5 {
- font-style: normal;
- font-size: var(--header-font-size);
- font-weight: 500;
- letter-spacing: calc(var(--header-font-size)*0.12);
- text-transform: uppercase;
- line-height: calc(var(--header-font-size)*1.2);
-}
-
-h4 {
-    display: inline-block;
-    flex-shrink: 0;
-    padding-left: 0px;
+h3,
+h4,
+h5 {
+    font-style: normal;
+    font-size: var(--header-font-size);
+    font-weight: var(--big-font-weight);
+    letter-spacing: calc(var(--header-font-size)*0.12);
+    text-transform: uppercase;
+    line-height: calc(var(--header-font-size)*1.2);
 }
 
 h5 {
-    display: inline-block;
     line-height: 1rem;
     text-transform: none;
 }
@@ -124,7 +123,8 @@ h5 {
     height: 15px;
 }
 
-.header__dropdown, .header__icon {
+.header__dropdown,
+.header__icon {
     display: none;
 }
 
@@ -291,9 +291,7 @@ hr {
 }
 
 .navbar__title {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    text-align: center;
     font-weight: var(--small-font-weight);
 }
 
@@ -317,7 +315,7 @@ hr {
     padding: 0;
     font-style: normal;
     flex-shrink: 0;
-    font-weight: 500;
+    font-weight: var(--big-font-weight);
     font-size: 18px;
     line-height: 22px;
 }
@@ -447,10 +445,14 @@ a:hover {
     border-radius: 50%;
 }
 
-@media screen and (width < 1070px) {
+@media screen and (width < 1080px) {
+
+    .description-title {
+        padding-top: 140px;
+        margin-bottom: 400px;
+    }
 
     .description-title h2 {
-        padding-top: 140px;
         line-height: 70px;
         letter-spacing: 12px;
         font-size: 50px;
@@ -458,7 +460,6 @@ a:hover {
 
     .description-title p {
         letter-spacing: 5px;
-        margin-bottom: 400px;
     }
 
     .about-trainer {
@@ -581,7 +582,7 @@ a:hover {
 
     .header__dropdown-menu li {
         display: block;
-       text-align: center;
+        text-align: center;
         font-weight: var(--small-font-weight);
         line-height: 30px;
         letter-spacing: 4px;
@@ -591,7 +592,7 @@ a:hover {
     }
 
     .header__dropdown a {
-        width: 120px; 
+        width: 120px;
     }
 
     .header__icon {
@@ -611,8 +612,12 @@ a:hover {
 
 @media screen and (width < 820px) {
 
-    .description-title h2 {
-        padding-top: 110px;
+    .description-title {
+       padding-top: 110px; 
+       margin-bottom: 300px;
+    }
+   
+    .description-title h2 {  
         font-size: 30px;
         line-height: 60px;
         letter-spacing: 11px;
@@ -621,8 +626,7 @@ a:hover {
     .description-title p {
         font-size: 12px;
         line-height: 5px;
-        letter-spacing: 5px;
-        margin-bottom: 300px;
+        letter-spacing: 5px;  
     }
 
     .header__title {
@@ -649,8 +653,12 @@ a:hover {
 
 @media screen and (width < 600px) {
 
-    .description-title h2 {
+    .description-title {
         padding-top: 55px;
+        margin-bottom: 180px;
+    }
+
+    .description-title h2 {
         font-size: 20px;
         line-height: 30px;
         letter-spacing: 4px;
@@ -660,7 +668,6 @@ a:hover {
         font-size: 9px;
         line-height: 5px;
         letter-spacing: 1px;
-        margin-bottom: 180px;
     }
 
     h3 {
