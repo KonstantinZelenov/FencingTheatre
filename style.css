@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 * {
@@ -8,11 +9,8 @@ html {
 
 body {
     width: 100%;
-    margin: 0;
-    padding-top: 80px;
     background-color: black;
     color: antiquewhite;
-    padding: 0;
     background-image: url(https://sun9-25.userapi.com/impg/cZIeB5DMK92czV3RBVtEz0we5YPFUrG8_Ws2Ag/DXT6oAZ41LY.jpg?size=1080x721&quality=96&sign=f966be6f7c44eb687f7b06e289a7160c&type=album);
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,8 +21,9 @@ body {
     align-items: center;
 }
 
-p {
+p, body {
     margin: 0;
+    padding: 0;
 }
 
 ul[class],
@@ -51,7 +50,7 @@ ol[class] {
     font-weight: 300;
     font-size: 60px;
     line-height: 100px;
-    letter-spacing: 13.8571px;
+    letter-spacing: 13px;
     text-transform: uppercase;
     margin: 0;
 
@@ -66,7 +65,7 @@ ol[class] {
     font-weight: 300;
     font-size: 15px;
     line-height: 5px;
-    letter-spacing: 8.8571px;
+    letter-spacing: 9px;
     text-transform: uppercase;
     margin-bottom: 600px;
 }
@@ -119,7 +118,6 @@ h5 {
 }
 
 .header__links li {
-    color: antiquewhite;
     width: 120px;
     text-align: center;
     font-weight: 300;
@@ -338,7 +336,6 @@ hr {
 
 .navbar__link p {
     display: inline-block;
-    padding: 0;
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
@@ -436,12 +433,6 @@ a:hover {
     letter-spacing: 1.8px;
 }
 
-.section-price__price-list {
-    padding: 0;
-    margin: 0;
-}
-
-
 .section-price__price-list li {
     padding: 10px 0 10px 0;
 }
@@ -462,8 +453,9 @@ a:hover {
 }
 
 .footer__icons img {
-    width: 60px;
-    height: 60px;
+    --size: 60px;
+    width: var(--size);
+    height: var(--size);
     border-radius: 50%;
 }
 
@@ -471,33 +463,14 @@ a:hover {
 
     .description-title h2 {
         padding-top: 140px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        font-weight: 300;
-        font-size: 40px;
-        line-height: 80px;
-        letter-spacing: 12.8571px;
-        text-transform: uppercase;
-        margin: 0;
-
+        line-height: 70px;
+        letter-spacing: 12px;
+        font-size: 50px;
     }
 
     .description-title p {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        font-weight: 300;
-        font-size: 15px;
-        line-height: 5px;
         letter-spacing: 5px;
-        text-transform: uppercase;
         margin-bottom: 400px;
-        padding: 0;
     }
 
     .about-trainer {
@@ -604,12 +577,9 @@ a:hover {
         top: 50%;
         background-color: rgb(33, 32, 32);
         min-width: 315px;
-        padding: 12px 16px;
         z-index: 1;
         height: 310px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        color: antiquewhite;
-        padding: 0;
     }
 
     .header__dropdown:hover .header__dropdown-menu {
@@ -633,7 +603,6 @@ a:hover {
     }
 
     .header__dropdown a {
-        color: antiquewhite;
         width: 120px; 
     }
 
@@ -656,33 +625,16 @@ a:hover {
 
     .description-title h2 {
         padding-top: 110px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        font-weight: 300;
         font-size: 30px;
         line-height: 60px;
-        letter-spacing: 11.8571px;
-        text-transform: uppercase;
-        margin: 0;
-
+        letter-spacing: 11px;
     }
 
     .description-title p {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        font-weight: 300;
         font-size: 12px;
         line-height: 5px;
         letter-spacing: 5px;
-        text-transform: uppercase;
         margin-bottom: 300px;
-        padding: 0;
     }
 
     .header__title {
@@ -711,40 +663,22 @@ a:hover {
 
     .description-title h2 {
         padding-top: 55px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        font-weight: 300;
         font-size: 20px;
         line-height: 30px;
         letter-spacing: 4px;
-        text-transform: uppercase;
-        margin: 0;
-
     }
 
     .description-title p {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        font-weight: 300;
         font-size: 9px;
         line-height: 5px;
         letter-spacing: 1px;
-        text-transform: uppercase;
         margin-bottom: 180px;
-        padding: 0;
     }
 
     h3 {
         font-weight: 300;
         font-size: 15px;
         letter-spacing: 3px;
-        text-transform: uppercase;
         text-align: center;
     }
 
