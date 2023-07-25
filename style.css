@@ -128,12 +128,6 @@ h5 {
     display: none;
 }
 
-.header__dropdown-menu img {
-    width: 30px;
-    height: 15px;
-    border-radius: 50%;
-}
-
 .header__division {
     font-weight: bold;
     font-size: 1.5rem;
@@ -158,6 +152,7 @@ h5 {
 }
 
 .about-trainer__text p {
+    font-size: var(--main-font-size);
     text-align: justify;
     font-weight: var(--small-font-weight);
     letter-spacing: 3px;
@@ -195,6 +190,7 @@ h5 {
 
 .about-project__text p {
     text-indent: var(--p-text-indent);
+    font-size: var(--main-font-size);
 }
 
 .about-project__image-list {
@@ -266,6 +262,7 @@ h5 {
     font-weight: var(--small-font-weight);
     letter-spacing: 3px;
     text-indent: var(--p-text-indent);
+    font-size: var(--main-font-size);
 }
 
 .video-content__video {
@@ -414,7 +411,7 @@ a:hover {
 
 .section-price__column p {
     font-weight: var(--small-font-weight);
-    font-size: 16px;
+    font-size: var(--main-font-size);
     line-height: 22px;
     letter-spacing: 1.8px;
 }
@@ -578,6 +575,7 @@ a:hover {
     .header__dropdown img {
         width: 30px;
         height: 30px;
+        border-radius: 50%;
     }
 
     .header__dropdown-menu li {
