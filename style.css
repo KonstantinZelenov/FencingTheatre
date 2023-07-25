@@ -8,15 +8,18 @@ html {
 }
 
 :root {
-    --font-size: 1rem;
+    --h1-font-size: 1.25rem;
     --header-font-size: 1.125rem;
+    --main-font-size: 1rem;
     --main-color: antiquewhite;
     --p-text-indent: 3rem;
+    --background-color: black;
+    --small-font-weight: 300;
 }
 
 body {
     width: 100%;
-    background-color: black;
+    background-color: var(--background-color);
     color: var(--main-color);
     background-image: url(https://sun9-25.userapi.com/impg/cZIeB5DMK92czV3RBVtEz0we5YPFUrG8_Ws2Ag/DXT6oAZ41LY.jpg?size=1080x721&quality=96&sign=f966be6f7c44eb687f7b06e289a7160c&type=album);
     background-repeat: no-repeat;
@@ -40,9 +43,9 @@ ol[class] {
 }
 
 .header__h1 {
-    font-weight: 300;
-    font-size: calc(var(--font-size)*1.25);
-    letter-spacing: calc(var(--font-size)*0.25);
+    font-weight: var(--small-font-weight);
+    font-size: var(--h1-font-size);
+    letter-spacing: calc(var(--h1-font-size)*0.25);
     text-transform: uppercase;
     text-align: center;
 }
@@ -54,7 +57,7 @@ ol[class] {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-weight: 300;
+    font-weight: var(--small-font-weight);
     font-size: 3.75rem;
     line-height: 6.25rem;
     letter-spacing: 0.8rem;
@@ -68,7 +71,7 @@ ol[class] {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-weight: 300;
+    font-weight: var(--small-font-weight);
     font-size: 0.9rem;
     line-height: 0.3rem;
     letter-spacing: 0.56rem;
@@ -106,7 +109,7 @@ h5 {
     padding: 0 25px 0 25px;
     position: fixed;
     top: 0;
-    background-color: black;
+    background-color: var(--background-color);
 }
 
 .header__links {
@@ -117,7 +120,7 @@ h5 {
 .header__links li {
     width: 120px;
     text-align: center;
-    font-weight: 300;
+    font-weight: var(--small-font-weight);
     font-size: 15px;
     line-height: 4px;
     letter-spacing: 4px;
@@ -141,7 +144,7 @@ h5 {
 
 .header__division {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5rem;
     display: inline;
     padding-left: 2px;
 }
@@ -164,7 +167,7 @@ h5 {
 
 .about-trainer__text p {
     text-align: justify;
-    font-weight: 300;
+    font-weight: var(--small-font-weight);
     letter-spacing: 3px;
     text-indent: var(--p-text-indent);
 }
@@ -189,7 +192,7 @@ h5 {
 
 .about-project__text {
     text-align: justify;
-    font-weight: 300;
+    font-weight: var(--small-font-weight);
     letter-spacing: 3px;
     display: flex;
     flex-direction: column;
@@ -268,7 +271,7 @@ h5 {
 
 .video-content__discription p {
     text-align: justify;
-    font-weight: 300;
+    font-weight: var(--small-font-weight);
     letter-spacing: 3px;
     text-indent: var(--p-text-indent);
 }
@@ -282,8 +285,9 @@ h5 {
 }
 
 hr {
-    margin-left: 15px;
-    margin-right: 15px;
+    --hr-border: 1rem;
+    margin-left: var(--hr-border);
+    margin-right: var(--hr-border);
 }
 
 .navbar {
@@ -298,9 +302,7 @@ hr {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    font-style: normal;
-    font-weight: 400;
-    text-transform: uppercase;
+    font-weight: var(--small-font-weight);
 }
 
 .navbar__links {
@@ -330,7 +332,7 @@ hr {
 
 .navbar__link p {
     display: inline-block;
-    font-weight: 300;
+    font-weight: var(--small-font-weight);
     font-size: 16px;
     line-height: 22px;
     color: rgba(241, 236, 236, 0.4);
@@ -421,7 +423,7 @@ a:hover {
 }
 
 .section-price__column p {
-    font-weight: 300;
+    font-weight: var(--small-font-weight);
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 1.8px;
@@ -432,7 +434,7 @@ a:hover {
 }
 
 .footer {
-    background-color: black;
+    background-color: var(--background-color);
     padding: 10px;
     text-align: center;
     margin-top: 30px;
@@ -447,9 +449,9 @@ a:hover {
 }
 
 .footer__icons img {
-    --size: 3.75rem;
-    width: var(--size);
-    height: var(--size);
+    --size-footer-img: 3.75rem;
+    width: var(--size-footer-img);
+    height: var(--size-footer-img);
     border-radius: 50%;
 }
 
@@ -588,7 +590,7 @@ a:hover {
     .header__dropdown-menu li {
         display: block;
        text-align: center;
-        font-weight: 300;
+        font-weight: var(--small-font-weight);
         line-height: 30px;
         letter-spacing: 4px;
         text-transform: uppercase;
@@ -670,7 +672,7 @@ a:hover {
     }
 
     h3 {
-        font-weight: 300;
+        font-weight: var(--small-font-weight);
         font-size: calc(var(--header-font-size)/1.2);
         letter-spacing: calc(var(--header-font-size)/6);
         text-align: center;
@@ -782,7 +784,6 @@ a:hover {
     }
 
     .header {
-        background-color: black;
         height: 40px;
     }
 
