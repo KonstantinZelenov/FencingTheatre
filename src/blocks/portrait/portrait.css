@@ -1,0 +1,116 @@
+
+@media (max-width: 769px) and (orientation: portrait) {
+  .main-title {
+    padding: clamp(0.5rem, -0.571rem + 5.357vi, 2rem);
+    background-image: url(../../images/about-me-black.jpg);
+  }
+
+  .main-title__header {
+    font-size: clamp(1rem, 1vh + 3.9vw, 8rem);
+    letter-spacing: clamp(0.1875rem, 0.0625rem + 0.8929vw, 0.75rem);
+  }
+  
+  .main-title__text {
+    font-size: clamp(0.4375rem, 0.125rem + 1.5625vw, 0.875rem);
+    letter-spacing: clamp(0.1rem, 0.6vw + 0.1vh, 1.5rem);
+  }
+
+  .main-title__image-list {
+    left: unset;
+    right: clamp(1.5625rem, 0.223rem + 6.696vw, 3.4375rem);
+    top: clamp(3.75rem, 1.071rem + 13.393vw, 7.5rem);
+    gap: clamp(1rem, -1.2857rem + 7.1429vw, 3rem);
+  }
+
+  .main-title__image-list-item {
+    inline-size: clamp(1.875rem, 0.625rem + 5.3571vw, 5rem);
+    block-size: clamp(1.875rem, 0.625rem + 5.3571vw, 5rem);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1025px) and (orientation: portrait) {
+  .main-title {
+    background-image: url(../../images/about-me-black.jpg);
+    padding: clamp(1rem, 1rem + 2vi, 3rem);
+  }
+
+  .main-title__header {
+    font-size: clamp(2rem, 2rem + 4vi, 10rem);
+    letter-spacing: clamp(0.375rem, 0.375rem + 1vi, 1.5rem);
+  }
+
+  .main-title__text {
+    font-size: clamp(0.875rem, 0.875rem + 1.5vi, 1.75rem);
+    letter-spacing: clamp(0.2rem, 0.2rem + 1vi, 2rem);
+  }
+
+  .main-title__image-list {
+    right: clamp(3rem, 3rem + 3vi, 6rem);
+    top: clamp(6rem, 6rem + 5vi, 12rem);
+    gap: clamp(2rem, 2rem + 2vi, 5rem);
+  }
+
+  .main-title__image-list-item {
+    inline-size: clamp(3rem, 3rem + 3vi, 8rem);
+    block-size: clamp(3rem, 3rem + 3vi, 8rem);
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1441px) and (orientation: portrait) {
+  .main-title {
+    background-image: url(../../images/about-me-black.jpg);
+    padding: clamp(1.5rem, 1.5rem + 3vi, 4rem);
+  }
+
+  .main-title__header {
+    font-size: clamp(3rem, 3rem + 5vi, 12rem);
+    letter-spacing: clamp(0.5rem, 0.5rem + 1.5vi, 2rem);
+  }
+
+  .main-title__text {
+    font-size: clamp(1rem, 1rem + 2vi, 2rem);
+    letter-spacing: clamp(0.3rem, 0.3rem + 1.5vi, 2.5rem);
+  }
+
+  .main-title__image-list {
+    right: clamp(4rem, 4rem + 4vi, 8rem);
+    top: clamp(8rem, 8rem + 6vi, 16rem);
+    gap: clamp(3rem, 3rem + 3vi, 7rem);
+  }
+
+  .main-title__image-list-item {
+    inline-size: clamp(4rem, 4rem + 4vi, 10rem);
+    block-size: clamp(4rem, 4rem + 4vi, 10rem);
+  }
+}
+
+@media (min-width: 1441px) and (orientation: portrait) {
+  .main-title {
+    background-image: url(../../images/about-me-black.jpg);
+    padding: clamp(2rem, 2rem + 4vi, 5rem);
+  }
+
+  .main-title__header {
+    font-size: clamp(4rem, 4rem + 6vi, 16rem);
+    letter-spacing: clamp(0.75rem, 0.75rem + 2vi, 3rem);
+  }
+
+  .main-title__text {
+    font-size: clamp(1.5rem, 1.5rem + 3vi, 3rem);
+    letter-spacing: clamp(0.5rem, 0.5rem + 2vi, 3rem);
+  }
+
+  .main-title__image-list {
+    right: clamp(5rem, 5rem + 5vi, 10rem);
+    top: clamp(10rem, 10rem + 8vi, 20rem);
+    gap: clamp(4rem, 4rem + 4vi, 10rem);
+  }
+
+  .main-title__image-list-item {
+    inline-size: clamp(5rem, 5rem + 5vi, 12rem);
+    block-size: clamp(5rem, 5rem + 5vi, 12rem);
+  }
+}
+
+
+

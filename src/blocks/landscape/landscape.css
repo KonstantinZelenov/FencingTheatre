@@ -1,0 +1,38 @@
+.main-title {
+  background-image: url(../../images/logo.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  block-size: 100vh;
+  background-position-x: center;
+  background-position-y: top;
+  inline-size: 100vw;
+}
+
+
+.main-title__header {
+  font-weight: var(--small-font-weight);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-title__text {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-title__image-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.main-title__image-list-item {
+  animation: pulse 7s ease-in-out infinite;
+  transform-origin: center;
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+  aspect-ratio: 1 / 1;
+}
+
+
