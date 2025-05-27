@@ -1,4 +1,4 @@
-import { openPopup, closePopup, setupCloseButton } from './scripts/modal.js';
+import { openPopup, closePopup, setupCloseButton } from './blocks/scripts/modal.js';
 
 const mainContainer = document.querySelector('.main');
 const hamburgerMenu = mainContainer.querySelector('.main-title__hamburger-menu-icon');
@@ -6,7 +6,7 @@ const contactsContainer = mainContainer.querySelector('.main-title__image-list-i
 const popupMainMenu = document.querySelector('.popup_main-menu');
 const popupLinksMenu = document.querySelector('.popup_links-menu');
 
-// Настройка попапа для гамбургер-меню
+
 function setupHamburgerMenuPopup() {
     hamburgerMenu.addEventListener('click', () => openPopup(popupMainMenu));
     popupMainMenu.addEventListener('click', (e) => closePopup(e, popupMainMenu));

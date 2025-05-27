@@ -1,38 +1,92 @@
-.main-title {
-  background-image: url(../../images/logo.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  block-size: 100vh;
-  background-position-x: center;
-  background-position-y: top;
-  inline-size: 100vw;
+@media (orientation: landscape) and (max-width: 1025px) {
+  .main-title {
+    padding: clamp(0.625rem, -1.25rem + 5vw, 1.5rem);
+    background-image: url('../../images/background-images/about-me-black-landscape-800-450.jpg');
+    background-image: 
+      -webkit-image-set(
+        url('../../images/background-images/about-me-black-landscape-800-450.webp') 1x,
+        url('../../images/background-images/about-me-black-landscape-1280-720.webp') 2x,
+        url('../../images/background-images/about-me-black-landscape-1920-1080.webp') 3x
+      );
+    background-image: 
+      image-set(
+        url('../../images/background-images/about-me-black-landscape-800-450.webp') 1x,
+        url('../../images/background-images/about-me-black-landscape-1280-720.webp') 2x,
+        url('../../images/background-images/about-me-black-landscape-1920-1080.webp') 3x
+      );
+    background-size: contain;
+  }
+
+  .main-title__image-list-item {
+    inline-size: clamp(1.25rem, -0.909rem + 7.2vw, 2.6rem);
+    block-size: clamp(1.25rem, -0.909rem + 7.2vw, 2.6rem);
+  }
+
+  .main-title__image-list {
+    top: clamp(80px, 14.7059px + 14.7059vw, 160px);
+    gap: clamp(0.7rem, 0.0147rem + 2.38vw, 2rem);
+  }
+
+  .main-title__header {
+    font-size: clamp(0.6rem, 0.5rem + 4.5vw, 8rem);
+    letter-spacing: clamp(0.1rem, 0.0625rem + 0.6vw, 0.75rem);
+  }
+
+  .main-title__text {
+    font-size: clamp(0.4rem, 0.125rem + 2vw, 1rem);
+    letter-spacing: clamp(0.1rem, 0.05rem + 0.35vw, 1.8rem);
+  }
 }
 
+@media (orientation: landscape) and (min-width: 1025px) {
+  .main-title {
+    padding: clamp(1.5rem, 1rem + 1vw, 3rem);
+     background-image: url('../../images/background-images/about-me-black-landscape-1920-1080.jpg');
+    
+    /* WebP с ретиной */
+    background-image: 
+      -webkit-image-set(
+        url('../../images/background-images/about-me-black-landscape-1920-1080.webp') 1x,
+        url('../../images/background-images/about-me-black-landscape-2560-1440.webp') 2x
+      );
+    background-image: 
+      image-set(
+        url('../../images/background-images/about-me-black-landscape-1920-1080.webp') 1x,
+        url('../../images/background-images/about-me-black-landscape-2560-1440.webp') 2x
+      );
+    background-size: contain;
+  }
 
-.main-title__header {
-  font-weight: var(--small-font-weight);
-  text-align: center;
-  text-transform: uppercase;
+  .main-title__image-list-item {
+    inline-size: clamp(2.6rem, 2rem + 1vw, 4rem);
+    block-size: clamp(2.6rem, 2rem + 1vw, 4rem);
+  }
+
+  .main-title__image-list {
+    top: clamp(160px, 10vh, 300px);
+    gap: clamp(2rem, 1rem + 1vw, 3rem);
+  }
+
+  .main-title__header {
+    font-size: clamp(4rem, 3rem + 2vw, 8rem);
+    letter-spacing: clamp(0.75rem, 0.5rem + 0.5vw, 1.5rem);
+  }
+
+  .main-title__text {
+    font-size: clamp(1rem, 0.8rem + 0.5vw, 2rem);
+    letter-spacing: clamp(0.5rem, 0.3rem + 0.5vw, 1.5rem);
+  }
 }
 
-.main-title__text {
-  text-align: center;
-  text-transform: uppercase;
-}
+ @media (orientation: landscape) and (min-width: 2000px) {
+    .main-title {
+      background-image: url('../../images/background-images/about-me-black-landscape-2560-1440.jpg');
+      background-image: 
+        -webkit-image-set(url('../../images/background-images/about-me-black-landscape-2560-1440.webp') 2x);
+    }
+  }
 
-.main-title__image-list {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-}
 
-.main-title__image-list-item {
-  animation: pulse 7s ease-in-out infinite;
-  transform-origin: center;
-  cursor: pointer;
-  z-index: 10;
-  position: relative;
-  aspect-ratio: 1 / 1;
-}
+
 
 
