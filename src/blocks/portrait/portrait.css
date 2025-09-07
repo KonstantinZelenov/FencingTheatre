@@ -15,7 +15,6 @@
         url('../../images/background-images/about-me-black-portrait-1080-1920.webp') 2x,
         url('../../images/background-images/about-me-black-portrait-1440-2560.webp') 3x
       );
-    background-size: contain;
   }
 
   .main-title__header {
@@ -39,6 +38,11 @@
     block-size: clamp(1.875rem, 0.625rem + 5.3571vw, 5rem);
   }
 
+  .popup__image-list-item {
+    inline-size: clamp(1.875rem, 0.625rem + 5.3571vw, 5rem);
+    block-size: clamp(1.875rem, 0.625rem + 5.3571vw, 5rem);
+  }
+
   .main-light-black-theme-img {
     transform: rotateY(180deg);
     position: absolute;
@@ -48,6 +52,10 @@
     opacity: 50%;
     animation: pulse 7s ease-in-out infinite;
   }
+}
+
+.background-image-light {
+  display: none;
 }
 
 
@@ -65,7 +73,6 @@
         url('../../images/background-images/about-me-black-portrait-1080-1920.webp') 1x,
         url('../../images/background-images/about-me-black-portrait-1440-2560.webp') 2x
       );
-    background-size: contain;
   }
 
   .main-title__header {
@@ -86,9 +93,16 @@
     inline-size: clamp(3rem, 3rem + 2vw, 8rem);
     block-size: clamp(3rem, 3rem + 2vw, 8rem);
   }
+
+  .popup__image-list-item {
+    inline-size: clamp(3rem, 3rem + 2vw, 8rem);
+    block-size: clamp(3rem, 3rem + 2vw, 8rem);
+  }
 }
 
-
+.background-image-light {
+  display: none;
+}
 /*
 @media (prefers-color-scheme: light) {
   :root {
@@ -97,11 +111,20 @@
   }
 
   .main-title {
-    background-image: url('../../images/about-me-white.jpg');
+    background-image: url('../../images/background-images/about-me-white.jpg');
     background-size: cover;
+
   }
+
+  .main-title__header{
+  -webkit-text-stroke: 2px white;
+  text-stroke: 2px white; 
+  font-size: 40px;
+  z-index: 2;
+  }
+
+  .background-image-light {
+  display: block;
 }
-*/
-
-
-
+}
+  

@@ -14,10 +14,14 @@
         url('../../images/background-images/about-me-black-landscape-1280-720.webp') 2x,
         url('../../images/background-images/about-me-black-landscape-1920-1080.webp') 3x
       );
-    background-size: contain;
   }
 
   .main-title__image-list-item {
+    inline-size: clamp(1.25rem, -0.909rem + 7.2vw, 2.6rem);
+    block-size: clamp(1.25rem, -0.909rem + 7.2vw, 2.6rem);
+  }
+
+  .popup__image-list-item {
     inline-size: clamp(1.25rem, -0.909rem + 7.2vw, 2.6rem);
     block-size: clamp(1.25rem, -0.909rem + 7.2vw, 2.6rem);
   }
@@ -54,10 +58,14 @@
         url('../../images/background-images/about-me-black-landscape-1920-1080.webp') 1x,
         url('../../images/background-images/about-me-black-landscape-2560-1440.webp') 2x
       );
-    background-size: contain;
   }
 
   .main-title__image-list-item {
+    inline-size: clamp(2.6rem, 2rem + 1vw, 4rem);
+    block-size: clamp(2.6rem, 2rem + 1vw, 4rem);
+  }
+
+  .popup__image-list-item {
     inline-size: clamp(2.6rem, 2rem + 1vw, 4rem);
     block-size: clamp(2.6rem, 2rem + 1vw, 4rem);
   }
