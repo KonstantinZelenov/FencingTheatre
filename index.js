@@ -1,16 +1,14 @@
 import { openPopup, closePopup, setupCloseButton } from './blocks/scripts/modal.js';
 import { POPUPS_CONFIG } from './blocks/scripts/popup_config.js'
 
-
-
-
 function createPopup(name, config) {
   const template = document.getElementById('popup-template');
   const popup = template.content.cloneNode(true).querySelector('.popup');
   popup.classList.add(`popup_${name}`);
 
   const body = popup.querySelector('.popup__body');
-  config.buildContent(body);
+  
+  body.insertAdjacentHTML('beforeend', config.content);
 
   document.body.appendChild(popup);
   popup.addEventListener('click', (e) => closePopup(e, popup));
@@ -38,9 +36,6 @@ function initAllPopups() {
     });
   });
 }
-
-
-
 
 function setupIconAnimation(containerSelector, iconSelector, interval = 7000) {
   const container = document.querySelector(containerSelector);
@@ -92,14 +87,12 @@ function setupIconAnimation(containerSelector, iconSelector, interval = 7000) {
 }
 
 function initAnimation() {
-    setupIconAnimation('.popup__image-list-item_contacts', '.popup__contacts-menu-icon'),
-    setupIconAnimation('.main-title__image-list-item_translate', '.main-title__translate-menu-icon')
+  setupIconAnimation('.popup__image-list-item_contacts', '.popup__contacts-menu-icon');
+  setupIconAnimation('.main-title__image-list-item_translate', '.main-title__translate-menu-icon');
 }
 
-
-initAllPopups();
-initAnimation();
-
-
-
-
+// Запуск инициализации
+document.addEventListener('DOMContentLoaded', () => {
+  initAllPopups();
+  initAnimation();
+});
