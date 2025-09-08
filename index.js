@@ -91,6 +91,16 @@ function initAnimation() {
   setupIconAnimation('.main-title__image-list-item_translate', '.main-title__translate-menu-icon');
 }
 
+function setViewportHeight() {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+// Инициализация
+window.addEventListener('DOMContentLoaded', setViewportHeight);
+window.addEventListener('resize', setViewportHeight);
+window.addEventListener('orientationchange', setViewportHeight);
+
 // Запуск инициализации
 document.addEventListener('DOMContentLoaded', () => {
   initAllPopups();

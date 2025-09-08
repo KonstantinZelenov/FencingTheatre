@@ -19,9 +19,15 @@ h5 {
   background-size: cover;
   transition: all 0.3s ease;
   block-size: 100vh;
+  block-size: 100dvh; /* Новый стандарт */
+  /* block-size: -webkit-fill-available;  Для iOS Safari */
   background-position-x: center;
   background-position-y: top;
   inline-size: 100vw;
+  inline-size: 100dvw;
+  
+  /* Учитываем безопасные области */
+  padding: var(--sat) var(--sar) var(--sab) var(--sal);
 }
 
 .main-title__header {
