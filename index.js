@@ -100,9 +100,11 @@ function setViewportHeight() {
 window.addEventListener('DOMContentLoaded', setViewportHeight);
 window.addEventListener('resize', setViewportHeight);
 window.addEventListener('orientationchange', setViewportHeight);
+window.addEventListener('load', setViewportHeight);
 
 // Запуск инициализации
 document.addEventListener('DOMContentLoaded', () => {
+  setViewportHeight();
   initAllPopups();
   initAnimation();
 });

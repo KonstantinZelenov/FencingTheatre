@@ -1,7 +1,11 @@
 
 @media (orientation: portrait) and (max-width: 1024px) {
   .main-title {
-    padding: clamp(0.5rem, -0.571rem + 5.357vw, 2rem);
+    padding: 
+      calc(clamp(0.5rem, -0.571rem + 5.357vw, 2rem) + var(--sat))
+      calc(clamp(0.5rem, -0.571rem + 5.357vw, 2rem) + var(--sar))
+      calc(clamp(0.5rem, -0.571rem + 5.357vw, 2rem) + var(--sab))
+      calc(clamp(0.5rem, -0.571rem + 5.357vw, 2rem) + var(--sal));
     background-image: url('../../images/background-images/about-me-black-portrait-720-1280.jpg');
     background-image: 
       -webkit-image-set(
