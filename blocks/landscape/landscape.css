@@ -1,6 +1,12 @@
 @media (orientation: landscape) and (max-width: 1025px) {
   .main-title {
     padding: clamp(0.625rem, -1.25rem + 5vw, 1.5rem);
+      padding-top: calc(clamp(0.625rem, -1.25rem + 5vw, 1.5rem) + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(clamp(0.625rem, -1.25rem + 5vw, 1.5rem) + env(safe-area-inset-bottom, 0px));
+    padding-left: calc(clamp(0.625rem, -1.25rem + 5vw, 1.5rem) + env(safe-area-inset-left, 0px));
+    padding-right: calc(clamp(0.625rem, -1.25rem + 5vw, 1.5rem) + env(safe-area-inset-right, 0px));
+    
+    block-size: 100dvh;
     background-image: url('../../images/background-images/about-me-black-landscape-800-450.jpg');
     background-image: 
       -webkit-image-set(
@@ -44,7 +50,14 @@
 
 @media (orientation: landscape) and (min-width: 1025px) {
   .main-title {
-    padding: clamp(1.5rem, 1rem + 1vw, 3rem);
+    padding: 
+      calc(clamp(1.5rem, 1rem + 1vw, 3rem) + env(safe-area-inset-top, 0px))
+      calc(clamp(1.5rem, 1rem + 1vw, 3rem) + env(safe-area-inset-right, 0px))
+      calc(clamp(1.5rem, 1rem + 1vw, 3rem) + env(safe-area-inset-bottom, 0px))
+      calc(clamp(1.5rem, 1rem + 1vw, 3rem) + env(safe-area-inset-left, 0px));
+    
+    /* Динамическая высота */
+    block-size: 100dvh;
      background-image: url('../../images/background-images/about-me-black-landscape-1920-1080.jpg');
     
     /* WebP с ретиной */
